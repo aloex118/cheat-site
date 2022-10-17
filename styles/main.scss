@@ -1,0 +1,218 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto&display=swap');
+@media (max-width: 500px) {
+    .arrow-img {
+      display: none;
+    }
+}
+
+//--------------SCROLLBAR-------------------\\
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #141D2C #ffffff;
+}
+
+*::-webkit-scrollbar { width: 16px; }
+*::-webkit-scrollbar-track { background: #ffffff; }
+*::-webkit-scrollbar-thumb {
+    background-color: #141D2C;
+    border-radius: 10px;
+    border: 5px solid #ffffff;
+}
+
+//-------------------------------------------\\
+
+body { font-family: 'Roboto', sans-serif; background-image: url("/img/background.png"); }
+
+.img-logo { width: 33px; height: 33px; }
+.img-logo:hover { opacity: 0.3; transition: opacity 0.3s; }
+
+.container-fluid { padding: 0 !important; }
+
+.navbar { background-color: #141D2C; }
+.nav-item { margin-left: 2em; }
+.nav-style { padding-left: 11em; font-size: 13px; }
+.nav-link { color: #fff !important; }
+.navbar-btn { background-color: #6CEF00; }
+.navbar-toggler { margin-right: 2em; 
+    width: 30px;
+    height: 10px;
+    position: relative;
+    transition: .5s ease-in-out;
+}
+.navbar-toggler, .navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span {
+    margin: 0;
+    padding: 0;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 60%;
+    background: #6CEF00;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.middle-bar { margin-top: 0px; }
+
+.navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+}
+
+.navbar-toggler.collapsed .top-bar {
+    margin-top: -6px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 6px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .toggler-icon { background-color: #6CEF00; }
+
+//
+
+.btn-prem { 
+    background-color: #6CEF00; 
+    color: #fff; 
+    font-size: 12px;
+    padding: 0.7em 2.50em 0.7em 2.50em;
+}
+
+.empty-row { margin-left: 11em; }
+
+// MAIN
+
+.char-par {
+    margin-top: 4em;
+}
+
+.main-text { 
+    font-size: 36px;
+    font-weight: bold;
+    color: #141D2C;
+}
+
+//
+
+.arrow-img {
+    margin-top: -5em;
+}
+
+.img-pic { margin-right: 20em; }
+.picture { margin-top: -5em; }
+.picture-1 { margin-top: 8em; }
+
+
+.con-sec { background-color: #F8FFF2; 
+width: 970px;
+height: 520px;}
+
+.con-sec-d { margin-top: 3em; margin-bottom: 3em; }
+
+.m-about-text { font-size: 20px; color: #6CEF00; }
+.m-text-b { font-size: 21px; font-weight: 600; color: #434343; }
+.m-text-bl { font-size: 20px; font-weight: 200; color: #141D2C; opacity: 70%; }
+.about-text { font-size: 18px; color: #141D2C; opacity: 70%; }
+.t-section { margin-top: 1.5em; }
+
+// footer 6
+.footer-95942 {
+    margin-top: 8em;
+	padding: 7rem 0;
+    text-align: left;
+}
+
+.nav-links {
+    li {
+        display: block;
+        margin-bottom: 16px;
+        a {
+            text-decoration: none !important;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            &:hover {
+                color: #383838;
+            }
+        }
+    }
+}
+
+.social {
+    &.app {
+        font-size: 16px;
+    }
+    li {
+        display: inline-block;
+        a {
+            display: inline-block;
+            padding: 10px;
+            color: #ccc;
+            &:hover {
+                color: #4200ff;
+            }
+        }
+    }
+    &.nav-left {
+        li {
+            &:first-child {
+                a {
+                    padding-left: 0px;
+                }
+            }
+        }
+    }	
+    &.nav-right {
+        li {
+            &:last-child {
+                a {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }	
+}
+
+.footer-text {
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 23px;
+    color: #141D2C;
+    opacity: 70%;
+}	
+
+.c-icons { width: 20px; height: 20px; 
+margin-bottom: 2px;
+margin-left: 2px; }
+
+.lan-text { margin-left: 8.50px; }
