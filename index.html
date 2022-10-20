@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hackbox Cheat</title>
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -24,7 +24,7 @@
                       <a class="nav-link" href="#">Главная</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Скачать</a>
+                      <a class="nav-link" href="download.html">Скачать</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Помощь</a>
@@ -32,7 +32,7 @@
                   </ul>
                 </div>
 
-                <button class="btn me-2 btn-prem" type="button">Премиум</button>
+                <button class="btn me-2 btn-prem" type="button" href="undefined.html">Премиум</button>
                 <div class="row empty-row">
                     <div class="col"></div>
                 </div>
@@ -47,7 +47,7 @@
                     <div class="col-xs-5 col-sm-5 mb-4 ms-2 p-xs-y-3 offset-xs-1 justify-content-center text-center row-f">
                       <h1 class="main-text mb-4">HACKBOX — новая эра читов <br> скачать бесплатно</h1>
                       <img class="arrow-img" src="img/arrow.png" alt="">
-                      <button style="margin-bottom: 5em;" class="btn btn-prem">Скачать для Windows</button>
+                      <button style="margin-bottom: 5em;" class="btn btn-prem" onClick="location.href='download.html'">Скачать для Windows</button>
                     </div>
                   </div>
                     </div>
@@ -63,13 +63,13 @@
                           <h1 class="m-about-text">О ПРОГРАММЕ HACKBOX CHEAT</h1>
                           <p class="about-text">Новый, уникальный в своём роде, совершенно бесплатный, обходящий любой античит
                             это всё про наш софт! Огромное количество привычных для вас функций, а также доработанные привычные для вас - WH и AIM. Мы, команда разработчиков, постоянно выпускаем свежие обновления, радуя наших клиентов новыми плюшками.</p>
-                            <button style="margin-bottom: 5em;" class="btn btn-prem justify-content-center">Выбрать подписку</button>
+                            <button style="margin-bottom: 5em;" class="btn btn-prem justify-content-center" onClick="location.href='undefined.html'">Выбрать подписку</button>
                         </div>
                         <div class="col">
                           <img class="img-fluid picture" src="img/picture.png" alt="">
                         </div>
                       </div>
-                        <img class="img-fluid picture-1" src="img/picture-2.png" alt="">
+                        <img class="img-fluid picture-1" src="img/picture-2.png" alt="" data-tilt>
                         <section class="t-section">
                           <div class="row justify-content-center text-center">
                             <div class="col">
@@ -128,8 +128,15 @@
                   </div>
                 </div>       
               </section>
+    <script>
+        $('.js-tilt').tilt({
+        scale: 1.2
+    })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/main.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <script type="text/javascript" src="https://popupsmart.com/freechat.js"></script><script> window.start.init({ title: "Приветствуем вас! У вас есть вопросы?", message: "Если у вас возникли вопросы или проблемы с использованием нашего софта - напишите нам сюда. С вами оперативно свяжутся и со всем помогут.", color: "#6CEF00", position: "left", placeholder: "Enter your message", withText: "Write with", viaWhatsapp: "Or write us directly via Whatsapp", gty: "Go to your", awu: "and write us", connect: "Connect now",  button: "Напишите нам", device: "everywhere",  services: [{"name":"whatsapp","content":"+380689104390"},{"name":"telegram","content":"aardev"},{"name":"messenger","content":null}]})</script>
+  </body>
 </html>
